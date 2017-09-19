@@ -5,3 +5,7 @@
 本文将罗列各类常见问题，并从配置到编码逐一完成一个实用的vue项目。  
 
 个人能力有限，欢迎指正。
+
+## 笔记
+* [1. 安装](https://github.com/molysama/vue-practice/blob/master/readme/1.%E5%AE%89%E8%A3%85.md)
+* [2. 配置](https://github.com/molysama/vue-practice/blob/master/readme/2.%E9%85%8D%E7%BD%AE.md)
