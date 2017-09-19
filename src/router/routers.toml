@@ -1,0 +1,7 @@
+
+# TOML格式，可导出json
+
+[[ROUTERS]]
+name = 'index'
+path = '/'
+component = 'index'

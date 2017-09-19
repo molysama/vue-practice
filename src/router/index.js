@@ -1,17 +1,30 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import home from '@/views/index'
+import _ from 'lodash/core'
+import {ROUTERS} from './routers.toml'
 
 Vue.use(Router)
 
+// 根据配置文件来创建一个路由
+const createRouter = (route) => {
+
+  // 可能含有的路由信息
+  const property = ['name', 'path', 'alias', 'redirect', 'meta', 'query']
+  const router = _.pick(route, property)
+  
+  // 加载对应的路由组件，此处不知是否是bug，此版本的require无法正确加载组件，需要使用import
+  router.component = () => import('@/views/' + route.component)
+
+  // 如果有子路由的话，遍历加载子路由
+  router.children = _.map(route.children, createRouter)
+
+  return router
+}
+
+const routes = _.map(ROUTERS, createRouter)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'index',
-      component: home
-    }
-  ]
+  mode: 'history',
+  routes
 })
