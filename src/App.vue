@@ -1,6 +1,5 @@
 <template lang="pug">
 #app 
-  img(src="./assets/logo.png")
   router-view
 </template>
 
@@ -9,14 +8,17 @@ export default {
   name: 'app'
 }
 </script>
-
+<style>
+#app, html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+</style>
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
