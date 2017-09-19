@@ -10,3 +10,7 @@
 * [1. 安装](https://github.com/molysama/vue-practice/blob/master/readme/1.%E5%AE%89%E8%A3%85.md)
 * [2. 配置](https://github.com/molysama/vue-practice/blob/master/readme/2.%E9%85%8D%E7%BD%AE.md)
 * [3.添加插件](https://github.com/molysama/vue-practice/blob/master/readme/3.%E6%B7%BB%E5%8A%A0%E6%8F%92%E4%BB%B6.md)
+
+
+License
+MIT
