@@ -12,5 +12,5 @@
 * [3.添加插件](https://github.com/molysama/vue-practice/blob/master/readme/3.%E6%B7%BB%E5%8A%A0%E6%8F%92%E4%BB%B6.md)
 
 
-License
+## License
 MIT
