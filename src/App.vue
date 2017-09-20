@@ -13,6 +13,11 @@ export default {
 .pure-g [class *= "pure-u"] {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 </style>
 <style>
 #app {
