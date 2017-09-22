@@ -18,6 +18,11 @@ function resolve (dir) {
 // webpack配置
 module.exports = {
 
+  // 指定一下模块通过cdn等外部方式引入
+  externals: {
+    'swpier': 'swiper'
+  },
+
   // webpack入口文件
   entry: {
     app: './src/main.js'
