@@ -13,8 +13,9 @@ export default {
 
 <style lang="stylus" scoped>
 .navbar 
-    background rgba(12, 24, 35, 0.64)
-    height 45px
+    background rgb(0, 191, 255, 1)
+    height 65px
+    text-align center
     line-height @height
 </style>
 

@@ -18,9 +18,9 @@ function resolve (dir) {
 // webpack配置
 module.exports = {
 
-  // 指定一下模块通过cdn等外部方式引入
+  // 指定模块通过cdn等外部方式引入
   externals: {
-    'swpier': 'swiper'
+    swiper: 'Swiper'
   },
 
   // webpack入口文件
