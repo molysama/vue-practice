@@ -1,21 +1,17 @@
-<template lang="pug">
 
-.page(@click="open")
-    masker(ref="masker", :show="parentshow")
+<template lang="pug">
+.page
+    //- masker(v-model="parentshow")
+    masker
     page-header
     section.container CONTENT
 </template>
-<script>
 
+<script>
 export default {
     data () {
         return {
             parentshow: true
-        }
-    },
-    methods: {
-        open () {
-            this.$refs['masker'].open()
         }
     }
 }
